@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Customer;
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreCustomerRequest;
 use DB;
 
 class CustomerController extends Controller
@@ -37,7 +36,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        // return view('customer.create');
+        //
     }
 
     /**
@@ -46,38 +45,9 @@ class CustomerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCustomerRequest $request)
+    public function store(Request $request)
     {
-        // try {
-        //     DB::beginTransaction();
-            
-        //     $file_path = '';
-        //     if ($request->file('avatar')) {
-        //         $name = time().'_'.$request->avatar->getClientOriginalName();
-        //         $file_path = 'uploads/avatar/customer/'.$name;
-        //         Storage::disk('public_uploads')->putFileAs('avatar/customer', $request->avatar, $name);
-        //     }
-            
-        //     $customer = Customer::create([
-        //         'code' => '',
-        //         'name' => $request->name,
-        //         'gender' => $request->gender,
-        //         'birthday' => date("Y-m-d", strtotime($request->birthday)),
-        //         'phone_number' => $request->phone_number,
-        //         'address' => $request->address,
-        //         'avatar' => $file_path,
-        //     ]);
-
-        //     $customer->update([
-        //         'code' => 'KH'.str_pad($customer->id, 6, '0', STR_PAD_LEFT)
-        //     ]);
-            
-        //     DB::commit();
-        //     return redirect()->route('customers.index')->with('alert-success','Thêm khách hàng thành công!');
-        // } catch (Exception $e) {
-        //     DB::rollback();
-        //     return redirect()->back()->with('alert-error','Thêm khách hàng thất bại!');
-        // }
+        //
     }
 
     /**
@@ -99,11 +69,7 @@ class CustomerController extends Controller
      */
     public function edit(Customer $customer)
     {
-        // $data = [
-        //     'data_edit' => $customer
-        // ];
-
-        // return view('customer.edit', $data);
+        //
     }
 
     /**
@@ -113,41 +79,9 @@ class CustomerController extends Controller
      * @param  \App\Models\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreCustomerRequest $request, Customer $customer)
+    public function update(Request $request, Customer $customer)
     {
-        // try {
-        //     DB::beginTransaction();
-
-        //     if ($request->file('avatar')) {
-        //         $name = time().'_'.$request->avatar->getClientOriginalName();
-        //         $file_path = 'uploads/avatar/customer/'.$name;
-        //         Storage::disk('public_uploads')->putFileAs('avatar/customer', $request->avatar, $name);
-                
-        //         $customer->update([
-        //             'name' => $request->name,
-        //             'gender' => $request->gender,
-        //             'birthday' => date("Y-m-d", strtotime($request->birthday)),
-        //             'phone_number' => $request->phone_number,
-        //             'address' => $request->address,
-        //             'avatar' => $file_path,
-        //         ]);
-        //     }
-        //     else {
-        //         $customer->update([
-        //             'name' => $request->name,
-        //             'gender' => $request->gender,
-        //             'birthday' => date("Y-m-d", strtotime($request->birthday)),
-        //             'phone_number' => $request->phone_number,
-        //             'address' => $request->address,
-        //         ]);
-        //     }
-            
-        //     DB::commit();
-        //     return redirect()->route('customers.index')->with('alert-success','Sửa khách hàng thành công!');
-        // } catch (Exception $e) {
-        //     DB::rollback();
-        //     return redirect()->back()->with('alert-error','Sửa khách hàng thất bại!');
-        // }
+        //
     }
 
     /**

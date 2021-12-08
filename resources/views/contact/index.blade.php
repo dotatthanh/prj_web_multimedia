@@ -35,7 +35,7 @@
                                         <div class="col-sm-5">
                                             <div class="search-box mr-2 mb-2 d-inline-block">
                                                 <div class="position-relative">
-                                                    <input type="text" name="search" class="form-control" placeholder="Nhập tên liên hệ">
+                                                    <input type="email" name="search" class="form-control" placeholder="Nhập email">
                                                     <i class="bx bx-search-alt search-icon"></i>
                                                 </div>
                                             </div>
@@ -51,6 +51,7 @@
                                         <thead class="thead-light">
                                             <tr>
                                                 <th style="width: 70px;" class="text-center">STT</th>
+                                                <th>Họ và tên</th>
                                                 <th>Email</th>
                                                 <th>Số điện thoại</th>
                                                 <th>Nội dung</th>
@@ -62,6 +63,7 @@
                                             @foreach ($contacts as $contact)
                                                 <tr>
                                                     <td class="text-center">{{ $stt++ }}</td>
+                                                    <td>{{ $contact->name }}</td>
                                                     <td>{{ $contact->email }}</td>
                                                     <td>{{ $contact->phone_number }}</td>
                                                     <td>

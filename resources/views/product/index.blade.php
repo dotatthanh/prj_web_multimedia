@@ -95,10 +95,10 @@
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         @if (substr($product->file, -3) == 'pdf')
-                                                                            <embed src="{{ $product->file }}" width="766px" height="600px" />
+                                                                            <embed src="{{ asset($product->file) }}" width="766px" height="600px" />
                                                                         @elseif (substr($product->file, -3) == 'mp3' || substr($product->file, -3) == 'mp4')
                                                                             <video width="766px" height="600px" controls>
-                                                                                <source src="{{ $product->file }}" type="video/{{ substr($product->file, -3) }}">
+                                                                                <source src="{{ asset($product->file) }}" type="video/{{ substr($product->file, -3) }}">
                                                                             </video>
                                                                         @else
                                                                             <img src="{{ asset($product->file) }}" alt="" style="max-width: 766px;">

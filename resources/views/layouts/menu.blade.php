@@ -11,7 +11,7 @@
                 {{-- @can('Xem danh sách danh mục') --}}
                 <li>
                     <a href="{{ route('categories.index') }}" class=" waves-effect">
-                        <i class="bx bx-user-circle"></i>
+                        <i class="bx bx-task"></i>
                         <span>Danh mục</span>
                     </a>
                 </li>
@@ -20,7 +20,7 @@
                 {{-- @can('Xem danh sách tin tức') --}}
                 <li>
                     <a href="{{ route('news.index') }}" class=" waves-effect">
-                        <i class="bx bx-user-circle"></i>
+                        <i class="bx bx-news"></i>
                         <span>Tin tức</span>
                     </a>
                 </li>
@@ -29,7 +29,7 @@
                 {{-- @can('Xem danh sách liên hệ') --}}
                 <li>
                     <a href="{{ route('contacts.index') }}" class=" waves-effect">
-                        <i class="bx bx-user-circle"></i>
+                        <i class="bx bxs-user-detail"></i>
                         <span>Liên hệ</span>
                     </a>
                 </li>
@@ -38,7 +38,7 @@
                 {{-- @can('Xem danh sách sản phẩm') --}}
                 <li>
                     <a href="{{ route('products.index') }}" class=" waves-effect">
-                        <i class="bx bx-user-circle"></i>
+                        <i class="bx bxl-product-hunt"></i>
                         <span>Sản phẩm</span>
                     </a>
                 </li>
@@ -47,7 +47,7 @@
                 {{-- @can('Xem thông tin') --}}
                 <li>
                     <a href="{{ route('infos.index') }}" class=" waves-effect">
-                        <i class="bx bx-user-circle"></i>
+                        <i class="bx bx-info-circle"></i>
                         <span>Thông tin</span>
                     </a>
                 </li>

@@ -9,7 +9,7 @@
             <div class="col-sm-12">
                 <div class="form-group">
                     <label for="title">Tiêu đề <span class="text-danger">*</span></label>
-                    <input id="title" name="title" type="text" class="form-control" placeholder="Họ và tên" value="{{ old('title', $data_edit->title ?? '') }}">
+                    <input id="title" name="title" type="text" class="form-control" placeholder="Tiêu đề" value="{{ old('title', $data_edit->title ?? '') }}">
                     {!! $errors->first('title', '<span class="error">:message</span>') !!}
                 </div>
             </div>

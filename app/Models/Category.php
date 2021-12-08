@@ -24,4 +24,8 @@ class Category extends Model
     public function products(){
     	return $this->hasMany(Product::class);
     }
+
+    public function getProducts(){
+        return $this->products()->where('status', 1)->limit(4)->latest();
+    }
 }
