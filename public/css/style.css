@@ -48,7 +48,7 @@ body{
   margin: 10px auto;
   width: auto !important;
   height: auto !important; }
-.s-content table, .s-content iframe {
+.s-content table, .s-content iframe, iframe {
   max-width: 100%; }
 
 .row-flex{
