@@ -122,6 +122,8 @@ body{
 }
 .logo a img{
     box-shadow: 0px 0px 10px 1px #b1a8a8;
+    width: 137px;
+    height: 127px;
 }
 .phone, .email, .cart, .cart p, .login, .register{
 	display: inline-block;
@@ -240,11 +242,12 @@ body{
   font-style: italic;
   font-family: 'Roboto';
 }
-.search a{
+.search button{
 	color: #8f205f;
 	position: absolute;
 	right: 10px;
 	top: 9px;
+	background: none;
 }
 /*			End Menu*/
 
@@ -328,7 +331,7 @@ body{
 	padding-top: 50px;
 	position: relative;
 }
-.title h1:after, .title h2:after{
+/*.title h1:after, .title h2:after{
 	position: absolute;
 	content: '';
 	background: url('../images/web/bg-right.png') no-repeat bottom right;
@@ -342,7 +345,7 @@ body{
 	width: 45px;
 	height: 20px;
 	left: -45px;
-}
+}*/
 
 
 .product{

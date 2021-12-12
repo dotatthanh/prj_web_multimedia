@@ -28,6 +28,9 @@
 	
 }
 @media (max-width: 991px){
+	.header {
+		height: 40px;
+	}
 	.light:after{
 		position: static;
 	}
@@ -49,6 +52,7 @@
 	}
 	.logo a img{
 		max-height: 40px;
+		width: 50px;
 	}
 	.btn-top{
 		display: block;
@@ -74,7 +78,7 @@
 	.search input{
 		max-height: 30px;
 	}
-	.search a{
+	.search button{
 		top: 4px;
 	}
 	.advantages{
@@ -263,9 +267,9 @@
 	.advantage {
 	    font-size: 19px;
 	}
-	.sup-footer{
+	/*.sup-footer{
 		margin-top: 40px;
-	}
+	}*/
 	.pay {
 	    top: 38px;
 	}

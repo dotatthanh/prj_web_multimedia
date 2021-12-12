@@ -42,3 +42,42 @@ Route::prefix('admin')->group(function () {
 	});
 	require __DIR__.'/auth.php';
 });
+
+// middleware check nếu ---CHƯA ĐĂNG NHẬP--- thì k vào đc
+// Route::middleware(['website'])->group(function () {
+	Route::get('/thong-tin-ca-nhan', [WebController::class, 'profile'])->name('web.profile');
+	Route::get('/doi-mat-khau', [WebController::class, 'viewChangePassword'])->name('web.change-password');
+	Route::post('/post-change-password', [WebController::class, 'changePassword'])->name('web.post-change-password');
+	Route::get('/dang-san-pham', [WebController::class, 'viewPostProduct'])->name('web.view-post-product');
+	Route::post('/post-dang-san-pham', [WebController::class, 'postProduct'])->name('web.post-product');
+// });
+	Route::post('/logout', [WebController::class, 'logout'])->name('web.logout');
+
+
+
+
+
+
+
+	
+	Route::get('/', [WebController::class, 'index'])->name('web.index');
+	Route::get('/tim-kiem', [WebController::class, 'search'])->name('web.search');
+// middleware check nếu ---ĐĂNG NHẬP RỒI--- thì k vào đc
+// Route::middleware(['guest_web'])->group(function () {
+	Route::get('/dang-nhap', [WebController::class, 'login'])->name('web.login');
+	Route::post('/post-login', [WebController::class, 'postLogin'])->name('web.post-login');
+	Route::get('/dang-ky', [WebController::class, 'register'])->name('web.register');
+	Route::post('/post-register', [WebController::class, 'postRegister'])->name('web.post-register');
+	Route::get('/quen-mat-khau', [WebController::class, 'viewForgotPassword'])->name('web.view-forgot-password');
+	Route::post('/quen-mat-khau', [WebController::class, 'forgotPassword'])->name('web.forgot-password');
+// });
+
+
+
+
+	Route::get('/danh-muc-san-pham/{id}', [WebController::class, 'categoryProduct'])->name('web.category-product');
+	Route::get('/chi-tiet-san-pham/{id}', [WebController::class, 'productDetail'])->name('web.product-detail');
+	Route::get('/danh-muc-tin-tuc/{id}', [WebController::class, 'categoryNews'])->name('web.category-news');
+	Route::get('/chi-tiet-tin-tuc/{id}', [WebController::class, 'newsDetail'])->name('web.news-detail');
+	Route::get('/lien-he', [WebController::class, 'contact'])->name('web.contact');
+	Route::post('/post-lien-he', [WebController::class, 'postContact'])->name('web.post-contact');
