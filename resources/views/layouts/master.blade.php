@@ -40,10 +40,10 @@
                     </div>
                     <div class="col-md-10 col-sm-10 col-xs-10">
                         <div class="phone">
-                            <i class="fa fa-phone-square" aria-hidden="true"></i> <a href="tel:0985900246" title="">0985.900.246</a>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i> <a href="tel:0563047024" title="">0563.047.024</a>
                         </div>
                         <div class="email">
-                            <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:lienhe@asoca.vn">lienhe@asoca.vn</a>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ducthang.dt03@gmail.com">ducthang.dt03@gmail.com</a>
                         </div>
                         @if (auth()->guard('web')->user())
                             <div class="dropdown d-inline-block-sm float-right account">
@@ -161,9 +161,9 @@
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-xs-12 info-contact p-top30">
                     <h2>THÔNG TIN LIÊN HỆ</h2>
-                    <p>Địa chỉ: 247 Cầu Giấy, Hà Nội</p>
-                    <div><span>Hotline:</span> <a href="tel:0985900246">0985.900.246</a></div>
-                    <div><span>Email:</span> <a href="mailto:lienhe@asoca.vn">lienhe@asoca.vn</a></div>
+                    <p>Địa chỉ: Km 10, Đường Nguyễn Trãi, Quận Thanh Xuân , TP Hà Nội, Việt Nam</p>
+                    <div><span>Hotline:</span> <a href="tel:0563047024">0563.047.024</a></div>
+                    <div><span>Email:</span> <a href="mailto:ducthang.dt03@gmail.com">ducthang.dt03@gmail.com</a></div>
                     <p>Giấy CNĐKDN: 0308808576</p>
                 </div>
                 <div class="col-md-5 col-sm-8 col-xs-12 p-top30">
