@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         // Tạo admin
-        User::create([
+        User::updateOrCreate([
             'code' => 'SUPER ADMIN',
         	'email' => 'ducthang.dt03@gmail.com',
         	'password' => bcrypt('123123123'),
