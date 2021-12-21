@@ -16,13 +16,13 @@ class UserSeeder extends Seeder
     {
         // Tạo admin
         User::create([
-            'code' => 'ADMIN',
-        	'email' => 'admin@gmail.com',
+            'code' => 'SUPER ADMIN',
+        	'email' => 'ducthang.dt03@gmail.com',
         	'password' => bcrypt('123123123'),
-        	'name' => 'Admin',
-        	'birthday' => '2000-08-17',
-        	'phone_number' => '0394121584',
-        	'address' => 'Sóc Trăng - Cần Thơ',
+        	'name' => 'Super Admin',
+        	'birthday' => '1999-03-21',
+        	'phone_number' => '0563047024',
+        	'address' => 'Đại học kiến trúc Hà Nội',
         	'gender' => 'Nam',
         ]);
     }
