@@ -67,7 +67,7 @@ class WebController extends Controller
     public function categoryNews($id)
     {
     	$category = Category::findOrFail($id);
-    	$posts = News::where('category_id', $id)->paginate(9);
+    	$posts = News::where('category_id', $id)->orderBy('created_at', 'desc')->paginate(9);
     	$random_news = News::inRandomOrder()->limit(5)->get();
 
     	$data = [

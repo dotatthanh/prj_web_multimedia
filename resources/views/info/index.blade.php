@@ -32,13 +32,13 @@
                             <div class="card-body">
                                 <form method="GET" action="{{ route('infos.index') }}">
                                     <div class="row mb-2">
-                                        {{-- @can('Sửa thông tin') --}}
+                                        @can('Sửa thông tin')
                                         <div class="col">
                                             <div class="text-sm-right">
                                                 <a href="{{ route('infos.edit', $info->id) }}" data-toggle="tooltip" data-placement="top" title="Sửa" class="text-white btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-pencil mr-1"></i> Sửa thông tin</a>
                                             </div>
                                         </div><!-- end col-->
-                                        {{-- @endcan --}}
+                                        @endcan
                                     </div>
                                 </form>
 

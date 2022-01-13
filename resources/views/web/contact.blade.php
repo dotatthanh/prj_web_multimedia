@@ -7,7 +7,7 @@
         <div class="contact-page">
             <div class="bg-color">
                 <div class="container p-top20">
-                    <div class="row text-white">
+                    <div class="row">
                         <div class="col-md-2 col-sm-2 col-xs-2"></div>
                         <div class="col-md-10 col-sm-10 -col-xs-10 list-item">
                             <ul>
@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="row pt-100 pb-100">
-                        <div class="col-md-6 col-sm-12 col-xs-12 text-center text-white text-contact">
+                        <div class="col-md-6 col-sm-12 col-xs-12 text-center text-contact">
                             {!! $info->description !!}
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12 categories">

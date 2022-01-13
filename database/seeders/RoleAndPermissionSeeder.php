@@ -23,61 +23,57 @@ class RoleAndPermissionSeeder extends Seeder
         User::find(1)->assignRole('Super Admin');
 
         // Tạo quyền
-        $view_room = Permission::create(['name' => 'Xem danh sách phòng ban']);
-        $create_room = Permission::create(['name' => 'Thêm phòng ban']);
-        $edit_room = Permission::create(['name' => 'Chỉnh sửa phòng ban']);
-        $delete_room = Permission::create(['name' => 'Xóa phòng ban']);
+        $view_category = Permission::create(['name' => 'Xem danh sách danh mục']);
+        $create_category = Permission::create(['name' => 'Thêm danh mục']);
+        $edit_category = Permission::create(['name' => 'Chỉnh sửa danh mục']);
+        $delete_category = Permission::create(['name' => 'Xóa danh mục']);
 
         // Set quyền cho vai trò super admin
-        $super_admin->givePermissionTo($view_room);
-        $super_admin->givePermissionTo($create_room);
-        $super_admin->givePermissionTo($edit_room);
-        $super_admin->givePermissionTo($delete_room);
+        $super_admin->givePermissionTo($view_category);
+        $super_admin->givePermissionTo($create_category);
+        $super_admin->givePermissionTo($edit_category);
+        $super_admin->givePermissionTo($delete_category);
 
-        $view_type = Permission::create(['name' => 'Xem danh sách loại dự án']);
-        $create_type = Permission::create(['name' => 'Thêm loại dự án']);
-        $edit_type = Permission::create(['name' => 'Chỉnh sửa loại dự án']);
-        $delete_type = Permission::create(['name' => 'Xóa loại dự án']);
+        $view_news = Permission::create(['name' => 'Xem danh sách tin tức']);
+        $create_news = Permission::create(['name' => 'Thêm tin tức']);
+        $edit_news = Permission::create(['name' => 'Chỉnh sửa tin tức']);
+        $delete_news = Permission::create(['name' => 'Xóa tin tức']);
 
-        $super_admin->givePermissionTo($view_type);
-        $super_admin->givePermissionTo($create_type);
-        $super_admin->givePermissionTo($edit_type);
-        $super_admin->givePermissionTo($delete_type);
+        $super_admin->givePermissionTo($view_news);
+        $super_admin->givePermissionTo($create_news);
+        $super_admin->givePermissionTo($edit_news);
+        $super_admin->givePermissionTo($delete_news);
 
-        $view_project = Permission::create(['name' => 'Xem danh sách dự án']);
-        $create_project = Permission::create(['name' => 'Thêm dự án']);
-        $edit_project = Permission::create(['name' => 'Chỉnh sửa dự án']);
-        $delete_project = Permission::create(['name' => 'Xóa dự án']);
+        $view_contact = Permission::create(['name' => 'Xem danh sách liên hệ']);
+        $delete_contact = Permission::create(['name' => 'Xóa liên hệ']);
 
-        $super_admin->givePermissionTo($view_project);
-        $super_admin->givePermissionTo($create_project);
-        $super_admin->givePermissionTo($edit_project);
-        $super_admin->givePermissionTo($delete_project);
+        $super_admin->givePermissionTo($view_contact);
+        $super_admin->givePermissionTo($delete_contact);
 
-        $view_tech_stack = Permission::create(['name' => 'Xem danh sách công nghệ']);
-        $create_tech_stack = Permission::create(['name' => 'Thêm công nghệ']);
-        $edit_tech_stack = Permission::create(['name' => 'Chỉnh sửa công nghệ']);
-        $delete_tech_stack = Permission::create(['name' => 'Xóa công nghệ']);
+        $view_product = Permission::create(['name' => 'Xem danh sách sản phẩm']);
+        $create_product = Permission::create(['name' => 'Thêm sản phẩm']);
+        $delete_product = Permission::create(['name' => 'Xóa sản phẩm']);
 
-        $super_admin->givePermissionTo($view_tech_stack);
-        $super_admin->givePermissionTo($create_tech_stack);
-        $super_admin->givePermissionTo($edit_tech_stack);
-        $super_admin->givePermissionTo($delete_tech_stack);
+        $super_admin->givePermissionTo($view_product);
+        $super_admin->givePermissionTo($create_product);
+        $super_admin->givePermissionTo($delete_product);
+
+        $view_info = Permission::create(['name' => 'Xem thông tin']);
+        $edit_info = Permission::create(['name' => 'Chỉnh sửa thông tin']);
+
+        $super_admin->givePermissionTo($view_info);
+        $super_admin->givePermissionTo($edit_info);
 
         $view_customer = Permission::create(['name' => 'Xem danh sách khách hàng']);
-        $create_customer = Permission::create(['name' => 'Thêm khách hàng']);
-        $edit_customer = Permission::create(['name' => 'Chỉnh sửa khách hàng']);
         $delete_customer = Permission::create(['name' => 'Xóa khách hàng']);
 
         $super_admin->givePermissionTo($view_customer);
-        $super_admin->givePermissionTo($create_customer);
-        $super_admin->givePermissionTo($edit_customer);
         $super_admin->givePermissionTo($delete_customer);
 
-        $view_user = Permission::create(['name' => 'Xem danh sách nhân sự']);
-        $create_user = Permission::create(['name' => 'Thêm nhân sự']);
-        $edit_user = Permission::create(['name' => 'Chỉnh sửa nhân sự']);
-        $delete_user = Permission::create(['name' => 'Xóa nhân sự']);
+        $view_user = Permission::create(['name' => 'Xem danh sách tài khoản']);
+        $create_user = Permission::create(['name' => 'Thêm tài khoản']);
+        $edit_user = Permission::create(['name' => 'Chỉnh sửa tài khoản']);
+        $delete_user = Permission::create(['name' => 'Xóa tài khoản']);
 
         $super_admin->givePermissionTo($view_user);
         $super_admin->givePermissionTo($create_user);
@@ -101,11 +97,6 @@ class RoleAndPermissionSeeder extends Seeder
         $super_admin->givePermissionTo($view_permission);
         $super_admin->givePermissionTo($view_permission_detail);
         $super_admin->givePermissionTo($edit_permission);
-
-        $view_statistic_project = Permission::create(['name' => 'Xem thống kê dự án']);
-        $view_statistic_user = Permission::create(['name' => 'Xem thống kê nhân sự']);
-
-        $super_admin->givePermissionTo($view_statistic_project);
-        $super_admin->givePermissionTo($view_statistic_user);
+        
     }
 }

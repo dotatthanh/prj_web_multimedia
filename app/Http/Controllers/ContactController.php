@@ -15,10 +15,10 @@ class ContactController extends Controller
      */
     public function index(Request $request)
     {
-        $contacts = Contact::paginate(10);
+        $contacts = Contact::orderBy('created_at', 'desc')->paginate(10);
 
         if ($request->search) {
-            $contacts = Contact::where('email', 'like', '%'.$request->search.'%')->paginate(10);
+            $contacts = Contact::where('email', 'like', '%'.$request->search.'%')->orderBy('created_at', 'desc')->paginate(10);
             $contacts->appends(['search' => $request->search]);
         }
 

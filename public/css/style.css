@@ -265,7 +265,7 @@ body{
 	left: 2%;
 }
 .slider-banner a{
-	padding-top: 32%;
+	padding-top: 43%;
 }
 .slider-banner ul li{
 	/*display: inline-block;*/
@@ -1180,7 +1180,7 @@ input[type=number]::-webkit-inner-spin-button {
 	padding: 12px 15px;
 	font-size: 25px;
 }
-.bg-color {
+/*.bg-color {
     background-color: rgba(48, 68, 85, 0.74);
 }
 
@@ -1189,7 +1189,7 @@ input[type=number]::-webkit-inner-spin-button {
 	background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-}
+}*/
 
 .text-contact{
 	line-height: 1.6;

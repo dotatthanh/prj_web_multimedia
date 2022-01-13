@@ -31,8 +31,8 @@
                             
                             <div class="news-other">
                                 <ul>
-                                    @foreach ($orther_news as $news)
-                                        <li><a href="{{ route('web.news-detail', $news->id) }}" title="">{{ $news->title }}</a></li>
+                                    @foreach ($orther_news as $post)
+                                        <li><a href="{{ route('web.news-detail', $post->id) }}" title="">{{ $post->title }}</a></li>
                                     @endforeach
                                 </ul>
                             </div>

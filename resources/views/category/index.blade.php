@@ -55,13 +55,13 @@
                                             </button>
                                         </div>
                                         
-                                        {{-- @can('Thêm danh mục') --}}
+                                        @can('Thêm danh mục')
                                         <div class="col-sm-4">
                                             <div class="text-sm-right">
                                                 <a href="{{ route('categories.create') }}" class="text-white btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i> Thêm danh mục</a>
                                             </div>
                                         </div><!-- end col-->
-                                        {{-- @endcan --}}
+                                        @endcan
                                     </div>
                                 </form>
 
@@ -86,13 +86,13 @@
                                                     <td>{{ $category->type ? 'Sản phẩm' : 'Tin tức' }}</td>
                                                     <td class="text-center">
                                                         <ul class="list-inline font-size-20 contact-links mb-0">
-                                                            {{-- @can('Chỉnh sửa danh mục') --}}
+                                                            @can('Chỉnh sửa danh mục')
                                                             <li class="list-inline-item px">
                                                                 <a href="{{ route('categories.edit', $category->id) }}" data-toggle="tooltip" data-placement="top" title="Sửa"><i class="mdi mdi-pencil text-success"></i></a>
                                                             </li>
-                                                            {{-- @endcan --}}
+                                                            @endcan
 
-                                                            {{-- @can('Xóa danh mục') --}}
+                                                            @can('Xóa danh mục')
                                                             <li class="list-inline-item px">
                                                                 <form method="post" action="{{ route('categories.destroy', $category->id) }}">
                                                                     @csrf
@@ -101,7 +101,7 @@
                                                                     <button type="submit" data-toggle="tooltip" data-placement="top" title="Xóa" class="border-0 bg-white"><i class="mdi mdi-trash-can text-danger"></i></button>
                                                                 </form>
                                                             </li>
-                                                            {{-- @endcan --}}
+                                                            @endcan
                                                         </ul>
                                                     </td>
                                                 </tr>

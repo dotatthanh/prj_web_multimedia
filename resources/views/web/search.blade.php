@@ -4,9 +4,9 @@
 
 @section('content')
     <div class="slider-banner fadeIn animated">
-        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slider.jpg') }}" alt=""></a></div>
-        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slider.jpg') }}" alt=""></a></div>
-        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slider.jpg') }}" alt=""></a></div>
+        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slide-1.jpg') }}" alt=""></a></div>
+        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slide-2.jpg') }}" alt=""></a></div>
+        <div><a class="c-img" href="javascript:void(0)" title=""><img title="" src="{{ asset('images/web/slide-3.jpg') }}" alt=""></a></div>
     </div>
     <div class="bg1">
         <div class="container">

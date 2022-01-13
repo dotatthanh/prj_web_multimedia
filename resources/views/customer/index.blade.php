@@ -90,7 +90,7 @@
                                                     <td>{{ $customer->address }}</td>
                                                     <td class="text-center">
                                                         <ul class="list-inline font-size-20 contact-links mb-0">
-                                                            {{-- @can('Xóa khách hàng') --}}
+                                                            @can('Xóa khách hàng')
                                                             <li class="list-inline-item px">
                                                                 <form method="post" action="{{ route('customers.destroy', $customer->id) }}">
                                                                     @csrf
@@ -99,7 +99,7 @@
                                                                     <button type="submit" data-toggle="tooltip" data-placement="top" title="Xóa" class="border-0 bg-white"><i class="mdi mdi-trash-can text-danger"></i></button>
                                                                 </form>
                                                             </li>
-                                                            {{-- @endcan --}}
+                                                            @endcan
                                                         </ul>
                                                     </td>
                                                 </tr>
