@@ -25,7 +25,7 @@
                         @foreach ($posts as $news)
                             <div class="col-md-4 col-sm-6 col-xs-12 fadeIn animated p-bot20">
                                 <div class="news">
-                                    <a href="{{ route('web.news-detail', $news->id) }}" title="{{ $news->title }}" class="c-img"><img title="" src="{{ asset('images/web/anh2-1.jpg') }}" alt=""></a>
+                                    <a href="{{ route('web.news-detail', $news->id) }}" title="{{ $news->title }}" class="c-img"><img title="" src="{{ $news->image }}" alt=""></a>
                                     <h3><a class="title-news" href="{{ route('web.news-detail', $news->id) }}" title="{{ $news->title }}">{{ $news->title }}</a></h3>
                                     <p>
                                         @php
