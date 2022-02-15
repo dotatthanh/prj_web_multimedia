@@ -52,10 +52,12 @@ class RoleAndPermissionSeeder extends Seeder
 
         $view_product = Permission::create(['name' => 'Xem danh sách sản phẩm']);
         $create_product = Permission::create(['name' => 'Thêm sản phẩm']);
+        $edit_product = Permission::create(['name' => 'Chỉnh sửa sản phẩm']);
         $delete_product = Permission::create(['name' => 'Xóa sản phẩm']);
 
         $super_admin->givePermissionTo($view_product);
         $super_admin->givePermissionTo($create_product);
+        $super_admin->givePermissionTo($edit_product);
         $super_admin->givePermissionTo($delete_product);
 
         $view_info = Permission::create(['name' => 'Xem thông tin']);
