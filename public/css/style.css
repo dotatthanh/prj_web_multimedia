@@ -139,9 +139,9 @@ body{
 
 /*			Menu*/
 .header-menu{
-	color: #fff;
+	color: #302c2c;
 	font-family: 'RobotoB';
-	background-image: linear-gradient(to right, #8f205f , #d07070);
+	background: #e7d4d4;
 }
 .header-menu.fixed{
 	position: fixed;
@@ -217,10 +217,11 @@ body{
 	display: inline-block;
 }
 .search input{
-	color: #000;
+	color: #fff;
 	border: none;
 	border-radius: 30px;
 	padding: 10px 40px 10px 15px;
+	background-image: linear-gradient(to right, #8f205f , #d07070);
 }
 .search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #999999;
@@ -327,14 +328,16 @@ body{
 	text-transform: uppercase;
 	font-family: 'RobotoB';
 	font-size: 24px;
-	display: inline-block;
-	padding-top: 50px;
+	margin-top: 50px;
 	position: relative;
+	background: #ebebeba8;
+	padding: 5px 0;
 }
 /*.title h1:after, .title h2:after{
 	position: absolute;
 	content: '';
 	background: url('../images/web/bg-right.png') no-repeat bottom right;
+	background: #ebebeb no-repeat bottom right;
 	width: 45px;
 	height: 20px;
 }
