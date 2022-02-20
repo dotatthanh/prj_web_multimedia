@@ -28,6 +28,7 @@ body{
 	font-family: 'Roboto';
 	color: #000;
 	line-height: 1.5;
+	background: #f9fafe;
 }
 .s-content ol {
   list-style: decimal;
